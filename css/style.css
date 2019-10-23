@@ -315,7 +315,7 @@ h1{color: #f4d03f; display: inline-block; text-transform: uppercase; position: r
 h2{color: #f4d03f; position: relative;}
 h3{position: relative; margin-bottom: 20px;}
 .invert{color: #fff;}
-.font1{font-family: yage;}
+.font1{font-family: '微软雅黑';}
 strong {
 	font-weight: bold;
 	color: #333;
