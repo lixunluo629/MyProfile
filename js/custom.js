@@ -570,14 +570,14 @@ $(document).on('ready', function() {
     var firstTime = false;
     $("#resume-btn").on('click', function() {
         if (!firstTime) {
-            var startColor = '#f4d03f';
-            var endColor = '#f4d03f';
+            var startColor = '#00b7ff';
+            var endColor = '#00b7ff';
             var element1 = document.getElementById('line-container1');
             var element2 = document.getElementById('line-container2');
             var element3 = document.getElementById('line-container3');
             var circle1 = new ProgressBar.Circle(element1, {
                 color: startColor,
-                trailColor: '#fff6da',
+                trailColor: '#9fddf5',
                 trailWidth: 7,
                 duration: 2000,
                 easing: 'easeInOut',
@@ -590,7 +590,7 @@ $(document).on('ready', function() {
             });
             var circle2 = new ProgressBar.Circle(element2, {
                 color: startColor,
-                trailColor: '#fff6da',
+                trailColor: '#9fddf5',
                 trailWidth: 7,
                 duration: 2000,
                 easing: 'easeInOut',
@@ -603,7 +603,7 @@ $(document).on('ready', function() {
             });
             var circle3 = new ProgressBar.Circle(element3, {
                 color: startColor,
-                trailColor: '#fff6da',
+                trailColor: '#9fddf5',
                 trailWidth: 7,
                 duration: 2000,
                 easing: 'easeInOut',
@@ -618,28 +618,28 @@ $(document).on('ready', function() {
                 strokeWidth: 20,
                 easing: 'easeInOut',
                 duration: 1400,
-                color: '#f4d03f',
-                trailColor: '#fff6da',
+                color: '#00b7ff',
+                trailColor: '#9fddf5',
                 trailWidth: 21,
             });
             var line2 = new ProgressBar.Line('#bar2', {
                 strokeWidth: 20,
                 easing: 'easeInOut',
                 duration: 1400,
-                color: '#f4d03f',
-                trailColor: '#fff6da',
+                color: '#00b7ff',
+                trailColor: '#9fddf5',
                 trailWidth: 21,
             });
             var line3 = new ProgressBar.Line('#bar3', {
                 strokeWidth: 20,
                 easing: 'easeInOut',
                 duration: 1400,
-                color: '#f4d03f',
-                trailColor: '#fff6da',
+                color: '#00b7ff',
+                trailColor: '#9fddf5',
                 trailWidth: 21,
             });
             setTimeout(function() {
-                circle1.animate(0.85, {
+                circle1.animate(0.99, {
                     from: {
                         color: startColor
                     },
@@ -647,7 +647,7 @@ $(document).on('ready', function() {
                         color: endColor
                     }
                 });
-                circle3.animate(0.95, {
+                circle3.animate(0.78, {
                     from: {
                         color: startColor
                     },
