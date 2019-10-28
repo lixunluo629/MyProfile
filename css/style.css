@@ -36,9 +36,8 @@ Project Developer : nurealamsabbir@gmail.com
 /*----------------------------------------------*/
 body {
 	font-family: 'Open Sans', sans-serif;
-    background: url(../images/main-bg.jpg) center bottom;
     background-size: cover;
-    background-color: #E8E8E8;
+    background-color: #803a42;
     margin: 0px;
     padding: 0px;
     font-size: 14px;
@@ -52,10 +51,6 @@ body {
 .h1, .h2, .h3, h1, h2, h3 {
 	font-family:'Oswald', sans-serif;
 	font-weight: 400;
-}
-@font-face{
-	font-family: yage;
-	src: url("yage.otf");
 }
 /*----------------------------------------------*/
 	/* Wrapper */
@@ -95,6 +90,7 @@ body {
   font-size: 14px;
   line-height: 1.7em;
   letter-spacing: 0.02em;
+  text-indent:2em;
 }
 .large-paragraph, .focus-text {
 	color: #666666;
@@ -412,7 +408,7 @@ span.year{color: #2895ee; float: right;}
 	width: 100%;
 	height: 100%;
 	z-index: 9999;
-	background: url('../images/Preloader_7.gif') center no-repeat #74d4fa;
+	background: url('../images/Preloader_7.gif') center no-repeat #c13747;
 }
 
 #frontpage{
@@ -566,7 +562,7 @@ ul.nav-menu li.selected span {
 .social-menu {		
 	display: inline-block;
 	float: none;
-	font-size: 18px;
+	font-size: 20px;
 	margin-right: 5px;
 }
 
@@ -598,6 +594,19 @@ ul.nav-menu li.selected span {
 
 .social-menu li i{
 	margin-top: 33%;
+}
+
+.icon-bilibili{
+	width: 100%;
+	height: 100%;
+	background-image: url('../images/icon/bilibili_icon_57x57.png');
+	background-position: center;
+	background-size: 70% auto;
+	background-repeat: no-repeat;
+}
+
+.icon-bilibili:hover{
+	background-image: url('../images/icon/bilibili_icon_57x57_hover.png');
 }
 
 /*-------------------------------------------------------*/
@@ -764,7 +773,7 @@ ul.personal-info li {
 
 .tabs .horizontal li a {
 	width: 33.3%;
-	border-right: 3px solid #ffffff;
+	border-right: 3px solid #803a42;
 	margin: 0px;
 	padding: 24px 0px 19px;
 	float: left;
@@ -899,7 +908,7 @@ ul.personal-info li {
 }
 
 .bar {
-	background: #9fddf5;
+	background: #c5575a;
 	padding-left: 0px;
 	height: 25px;
 	overflow: hidden;
@@ -1025,7 +1034,7 @@ span.address-icon{
     float: left;
     width: 25%;
     background: #111111;
-    border-right: 2px solid #fff;
+    border-right: 2px solid #803a42;
     color: #c5575a;
     padding: 12px 0px;
     cursor: pointer;

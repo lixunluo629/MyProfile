@@ -4,6 +4,23 @@
 
 var mapLoaded = false,
     map;
+/*---------------Baidu Maps Scripts-------------------------*/
+//创建和初始化地图函数：
+function initMap(){
+    createMap();//创建地图
+}
+
+//创建地图函数：
+function createMap(){
+    var map = new BMap.Map("Map");//在百度地图容器中创建一个地图
+    var point = new BMap.Point(113.3406,23.1096);//定义一个中心点坐标
+    map.centerAndZoom(point,18);//设定地图的中心点和坐标并将地图显示在地图容器中
+    window.map = map;//将map变量存储在全局
+}
+
+//创建和初始化地图
+initMap();
+
 /*---------------Google Maps Scripts-------------------------*/
 // function initMap() {
 //     var mapStyle = [
@@ -499,7 +516,7 @@ $(document).on('ready', function() {
 
     setTimeout(function(){
         $(".frontclick").addClass('active');
-    },4000);
+    },1000);
 
 
     // initMap();
@@ -570,14 +587,14 @@ $(document).on('ready', function() {
     var firstTime = false;
     $("#resume-btn").on('click', function() {
         if (!firstTime) {
-            var startColor = '#00b7ff';
-            var endColor = '#00b7ff';
+            var startColor = '#803a42';
+            var endColor = '#803a42';
             var element1 = document.getElementById('line-container1');
             var element2 = document.getElementById('line-container2');
             var element3 = document.getElementById('line-container3');
             var circle1 = new ProgressBar.Circle(element1, {
                 color: startColor,
-                trailColor: '#9fddf5',
+                trailColor: '#c5575a',
                 trailWidth: 7,
                 duration: 2000,
                 easing: 'easeInOut',
@@ -590,7 +607,7 @@ $(document).on('ready', function() {
             });
             var circle2 = new ProgressBar.Circle(element2, {
                 color: startColor,
-                trailColor: '#9fddf5',
+                trailColor: '#c5575a',
                 trailWidth: 7,
                 duration: 2000,
                 easing: 'easeInOut',
@@ -603,7 +620,7 @@ $(document).on('ready', function() {
             });
             var circle3 = new ProgressBar.Circle(element3, {
                 color: startColor,
-                trailColor: '#9fddf5',
+                trailColor: '#c5575a',
                 trailWidth: 7,
                 duration: 2000,
                 easing: 'easeInOut',
@@ -618,24 +635,24 @@ $(document).on('ready', function() {
                 strokeWidth: 20,
                 easing: 'easeInOut',
                 duration: 1400,
-                color: '#00b7ff',
-                trailColor: '#9fddf5',
+                color: '#803a42',
+                trailColor: '#c5575a',
                 trailWidth: 21,
             });
             var line2 = new ProgressBar.Line('#bar2', {
                 strokeWidth: 20,
                 easing: 'easeInOut',
                 duration: 1400,
-                color: '#00b7ff',
-                trailColor: '#9fddf5',
+                color: '#803a42',
+                trailColor: '#c5575a',
                 trailWidth: 21,
             });
             var line3 = new ProgressBar.Line('#bar3', {
                 strokeWidth: 20,
                 easing: 'easeInOut',
                 duration: 1400,
-                color: '#00b7ff',
-                trailColor: '#9fddf5',
+                color: '#803a42',
+                trailColor: '#c5575a',
                 trailWidth: 21,
             });
             setTimeout(function() {

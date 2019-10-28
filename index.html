@@ -10,7 +10,6 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="http://webtechtoday.com/">
-    <meta name="author" content="nurealam sabbir">
 
     <!-- Mobile Specific Metas 
   ================================================== -->
@@ -36,6 +35,7 @@
     <!--[if lt IE 9]>
         <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]--> 
+    <script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
     <script src="js/jquery.min.js"></script> <!-- JQUERY -->
 </head>
 <body>
@@ -48,7 +48,7 @@
         <div class="shadow-img"></div> 
         <img src="images/front-image.jpg" class="front-img img-responsive" alt ="Front-image"><!--IMAGE FOR FRONT SCREEN-->
         <h1>Tomori <span class="invert">Nao</span></h1><!--PROFILE NAME-->
-        <h3 class="invert" style="margin-top: -10px; margin-bottom: 10px;">Program <span class="rotate">Developer, Designer, Engineer</span></h3> <!--SUBTITLE IN PROFILE-->
+        <h3 class="invert" style="margin-top: -10px; margin-bottom: 10px;">软件 <span class="rotate">工程师, 开发者, 设计师</span></h3> <!--SUBTITLE IN PROFILE-->
         <div class="frontclick"><img src="images/click.png" alt="" class="img-responsive"><span class="pulse"></span></div>
     </div>
     <!--FRONT PAGE/ SPLASH SCREEN SECTION ENDS-->
@@ -61,7 +61,7 @@
                     <div class="shadow-img"></div>
                     <h1 class="maintitle">Tomori <span class="invert">Nao</span></h1><!--PROFILE NAME-->
                     <h3 class="invert sub-maintitle font1">软件 
-                        <span class="rotate">开发者, 工程师, 设计师</span><!--SUBTITLE AFTET NAME-->
+                        <span class="rotate">工程师, 开发者, 设计师</span><!--SUBTITLE AFTET NAME-->
                     </h3>
                     <img id="profile-img" class="profile-img transparent" src="images/profile-thum.png" alt="profile-image"/><!--PROFILE IMAGE-->
                 </div><!--/#namecard-->
@@ -90,11 +90,9 @@
                     <!--SOCIAL NAV MENU-->
                     <div class="social-menu-container">
                         <ul class="social-menu no-padding">                     
-                            <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="https://plus.google.com/"><i class="fa fa-google-plus"></i></a></li>
-                            <li><a href="https://www.youtube.com/"><i class="fa fa-youtube"></i></a></li>
-                            <li><a href="https://www.pinterest.com/"><i class="fa fa-pinterest-p"></i></a></li>
-                            <li><a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="https://im.qq.com"><i class="fa fa-qq"></i></a></li>
+                            <li><a href="https://wx.qq.com/"><i class="fa fa-weixin"></i></a></li>
+                            <li><a href="https://www.bilibili.com/"><div class="icon-bilibili"></div></a></li>
                         </ul>
                     </div><!--/.social-menu-container-->
                 </div><!--#menu-container-->
@@ -121,7 +119,7 @@
                             <!--ALL PERSONAL DETAILS-->
                             <h3 class="personal-info-title title">Personal Info</h3>
                             <ul class="personal-info">
-                                <li class="rotate-out rotated"><label>Name</label><span>李讯络</span></li>                     
+                                <li class="rotate-out rotated"><label>Name</label><span>Tomori Nao</span></li>                     
                                 <li class="rotate-out rotated"><label>Address</label><span>广东省 广州市海珠区琶洲大道</span></li>
                                 <li class="rotate-out rotated"><label>Email</label><span>291340703@qq.com</span></li>  
                                 <li class="rotate-out rotated"><label>Phone</label><span>+86 13392466525</span></li>
@@ -370,11 +368,9 @@
                             <div class="row">
                                 <div class="col-sm-12">
                                     <div class="map-container">
-                                        <!--GOOGLE MAP-->
-                                        <div id="map" style="width:100%;height:325px;">
-                                                <iframe style="width: 100%;height: 100%;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1297.4883781852998!2d113.33592723674737!3d23.102537829081797!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3402ff7629b8d9e3%3A0xf14d7b42bb63b752!2z5Y-M5aGU6Lev!5e0!3m2!1szh-CN!2sus!4v1571825300243!5m2!1szh-CN!2sus" allowfullscreen=""></iframe>
-                                        </div>
-                                        <!--/GOOGLE MAP-->
+                                        <!--MAP-->
+                                        <div id="Map" style="width:100%;height:340px;"></div>
+                                        <!--/MAP-->
                                     </div>
                                 </div>
                                 <div class="col-sm-5">
