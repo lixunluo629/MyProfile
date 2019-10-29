@@ -5,171 +5,19 @@
 var mapLoaded = false,
     map;
 /*---------------Baidu Maps Scripts-------------------------*/
-//创建和初始化地图函数：
 // function initMap(){
-//     createMap();//创建地图
+//     createMap();
 // }
 
-// //创建地图函数：
 // function createMap(){
-//     var map = new BMap.Map("Map");//在百度地图容器中创建一个地图
-//     var point = new BMap.Point(113.3406,23.1096);//定义一个中心点坐标
-//     map.centerAndZoom(point,18);//设定地图的中心点和坐标并将地图显示在地图容器中
-//     window.map = map;//将map变量存储在全局
+//     var map = new BMap.Map("Map");
+//     var point = new BMap.Point(113.3406,23.1096);
+//     map.centerAndZoom(point,18);
+//     window.map = map;
 // }
 
-// //创建和初始化地图
 // initMap();
 
-/*---------------Google Maps Scripts-------------------------*/
-// function initMap() {
-//     var mapStyle = [
-//         {
-//             "featureType": "administrative",
-//             "elementType": "all",
-//             "stylers": [
-//                 {
-//                     "saturation": "-100"
-//                 }
-//             ]
-//         },
-//         {
-//             "featureType": "administrative.province",
-//             "elementType": "all",
-//             "stylers": [
-//                 {
-//                     "visibility": "off"
-//                 }
-//             ]
-//         },
-//         {
-//             "featureType": "landscape",
-//             "elementType": "all",
-//             "stylers": [
-//                 {
-//                     "saturation": -100
-//                 },
-//                 {
-//                     "lightness": 65
-//                 },
-//                 {
-//                     "visibility": "on"
-//                 }
-//             ]
-//         },
-//         {
-//             "featureType": "poi",
-//             "elementType": "all",
-//             "stylers": [
-//                 {
-//                     "saturation": -100
-//                 },
-//                 {
-//                     "lightness": "50"
-//                 },
-//                 {
-//                     "visibility": "simplified"
-//                 }
-//             ]
-//         },
-//         {
-//             "featureType": "road",
-//             "elementType": "all",
-//             "stylers": [
-//                 {
-//                     "saturation": "-100"
-//                 }
-//             ]
-//         },
-//         {
-//             "featureType": "road.highway",
-//             "elementType": "all",
-//             "stylers": [
-//                 {
-//                     "visibility": "simplified"
-//                 }
-//             ]
-//         },
-//         {
-//             "featureType": "road.arterial",
-//             "elementType": "all",
-//             "stylers": [
-//                 {
-//                     "lightness": "30"
-//                 }
-//             ]
-//         },
-//         {
-//             "featureType": "road.local",
-//             "elementType": "all",
-//             "stylers": [
-//                 {
-//                     "lightness": "40"
-//                 }
-//             ]
-//         },
-//         {
-//             "featureType": "transit",
-//             "elementType": "all",
-//             "stylers": [
-//                 {
-//                     "saturation": -100
-//                 },
-//                 {
-//                     "visibility": "simplified"
-//                 }
-//             ]
-//         },
-//         {
-//             "featureType": "transit.station.airport",
-//             "elementType": "labels",
-//             "stylers": [
-//                 {
-//                     "saturation": "-16"
-//                 }
-//             ]
-//         },
-//         {
-//             "featureType": "water",
-//             "elementType": "geometry",
-//             "stylers": [
-//                 {
-//                     "hue": "#ffff00"
-//                 },
-//                 {
-//                     "lightness": -25
-//                 },
-//                 {
-//                     "saturation": -97
-//                 }
-//             ]
-//         },
-//         {
-//             "featureType": "water",
-//             "elementType": "labels",
-//             "stylers": [
-//                 {
-//                     "lightness": -25
-//                 },
-//                 {
-//                     "saturation": -100
-//                 }
-//             ]
-//         }
-//     ];
-//     map = new google.maps.Map(document.getElementById('map'), {
-//        center: {lat: 23.822724694190565, lng: 88.7800669670105},
-//         // center: myCenter, 23.830262191202287 88.76633405685425
-//         zoom: 11,
-//         maptype: 'roadmap',
-//         styles: mapStyle
-//     });
-//     google.maps.event.addListener(map,'click',function(e) {
-//     console.log(e.latLng.lat(),e.latLng.lng())
-//                      document.getElementById('latlongclicked').value = e.latLng.lat()
-//                      document.getElementById('lotlongclicked').value =  e.latLng.lng()
-//                  });
-// }
 
 function showPage(bt, pagename) {
     var btn = $(bt),
